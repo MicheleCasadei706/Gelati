@@ -1,0 +1,34 @@
+﻿<Window x:Class="Casadei.Michele._4i.gelati.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Casadei.Michele._4i.gelati"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="850"
+        WindowStartupLocation="CenterScreen" Loaded="Casadei_Window_Loaded">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!--DataGrid dgPersone-->
+        <DataGrid x:Name="dataGridGelati" Grid.Column="0" Grid.Row="0" Margin="15,15,15,0" SelectionChanged="dataGridGelati_SelectionChanged" CanUserAddRows="False" CanUserDeleteRows="False"/>
+
+        <!--DataGrid dgContatti-->
+        <DataGrid x:Name="dataGridIngredienti" Grid.Column="1" Grid.Row="0" Margin="15,15,15,0" SelectionChanged="dataGridIngredienti_SelectionChanged" CanUserDeleteRows="False" CanUserAddRows="False"/>
+
+        <!--TetBloc statusabar-->
+        <TextBlock x:Name="statusbar" Grid.Column="0" Margin="0,217,0,0" Grid.RowSpan="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="10" Padding="10"/>
+
+
+    </Grid>
+
+</Window>
