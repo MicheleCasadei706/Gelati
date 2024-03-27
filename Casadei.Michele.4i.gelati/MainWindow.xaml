@@ -19,10 +19,10 @@
             <RowDefinition Height="2*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <!--DataGrid dgPersone-->
+        <!--DataGrid dgGelati-->
         <DataGrid x:Name="dataGridGelati" Grid.Column="0" Grid.Row="0" Margin="15,15,15,0" SelectionChanged="dataGridGelati_SelectionChanged" CanUserAddRows="False" CanUserDeleteRows="False"/>
 
-        <!--DataGrid dgContatti-->
+        <!--DataGrid dgIngredienti-->
         <DataGrid x:Name="dataGridIngredienti" Grid.Column="1" Grid.Row="0" Margin="15,15,15,0" SelectionChanged="dataGridIngredienti_SelectionChanged" CanUserDeleteRows="False" CanUserAddRows="False"/>
 
         <!--TetBloc statusabar-->
